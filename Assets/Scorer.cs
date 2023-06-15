@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectHit : MonoBehaviour
+public class Scorer : MonoBehaviour
 {
     
+    int hits = 0;
+
     private void OnCollisionEnter(Collision other) 
     {
-        // Debug.Log("Bumped into a wall!");
-        GetComponent<MeshRenderer>().material.color = Color.red;
+        hits++;
+        Debug.Log("Score: " + hits);
     }
 
 }
