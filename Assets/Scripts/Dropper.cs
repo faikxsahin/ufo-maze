@@ -26,7 +26,6 @@ public class Dropper : MonoBehaviour
     {
         if (Time.time > timeToWait)
         {
-            Debug.Log("5 seconds has elapsed");
             meshRenderer.enabled = true;
             rigidBody.useGravity = true;
         }
